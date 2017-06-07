@@ -1,0 +1,37 @@
++ Thiết lập chứng thực cá nhân
+	git config --global user.name "CUONG NGUYEN"
+	git config --global user.email "vietcuong2892@gmail.com"
+	
+	//xem lai thiet lap
+	cat ~/.gitconfig
+
++ Tạo local repository
+	+ git init git_example
+
++ Get repository
+ 	+ git clone địa_chỉ
+
++ PUSH lên github
+	git push origin [branch]
+	ex: git push origin master
+
++ Kiểm tra xem code mình có thay đổi chưa
+	+ git status
++ Để commit code lên github anh phải chay 3 cmd sau:
+	+ git add .
+	+ git commit -m "tên commit"
+	+ git push
++ Để pull code về máy mà đã clone rồi
+	+ git pull
++ Để xem các commit 
+	+ git log
++ Branch phân nh
+	+ git branch develop
+	+ git checkout develop
+
++ Bỏ Qua Các Tập Tin
+	+ git rm -r --cached .
+	+ touch .gitignore
+	+ git add .
+	+ git commit -m "Update .gitignore"
+	+ git push origin [branch]
